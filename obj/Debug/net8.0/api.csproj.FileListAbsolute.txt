@@ -141,3 +141,8 @@ D:\ASP .NET Core Web API\Stock\api\obj\Debug\net8.0\refint\api.dll
 D:\ASP .NET Core Web API\Stock\api\obj\Debug\net8.0\api.pdb
 D:\ASP .NET Core Web API\Stock\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 D:\ASP .NET Core Web API\Stock\api\obj\Debug\net8.0\ref\api.dll
+D:\ASP .NET Core Web API\Stock\api\obj\Debug\net8.0\api.sourcelink.json
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
