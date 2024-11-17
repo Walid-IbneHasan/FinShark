@@ -146,3 +146,11 @@ D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPat
 D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\ASP .NET Core Web API\Stock\api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

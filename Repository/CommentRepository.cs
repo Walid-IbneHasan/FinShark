@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using api.Dtos.Comment;
 using api.Interfaces;
 using api.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace api.Repository
 {
@@ -18,14 +19,23 @@ namespace api.Repository
             _context=context;
         }
 
-        public Task<Comment> CreateAsync(Comment commentModel)
+        public async Task<Comment> CreateAsync(Comment commentModel)
         {
-            throw new NotImplementedException();
+            await _context.Comments.AddAsync(commentModel);
+            await _context.SaveChangesAsync();
+            return commentModel;
         }
 
-        public Task<Comment> DeleteAsync(int id)
+        public async Task<Comment?> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var comment=await _context.Comments.FirstOrDefaultAsync(u=>u.Id==id);
+            if(comment==null)
+            {
+                return null;
+            }
+            _context.Comments.Remove(comment);
+            await _context.SaveChangesAsync();
+            return comment;
         }
 
         public async Task<List<Comment>> GetAllAsync()
@@ -38,7 +48,21 @@ namespace api.Repository
             throw new NotImplementedException();
         }
 
-        public Task<Comment> UpdateAsync(int id, UpdateCommentRequestDto commentModel)
+        public async Task<Comment?> UpdateAsync(int id, Comment commentModel)
+        {
+            var existingComment=await _context.Comments.FindAsync(id);
+            if(existingComment==null)
+            {
+                return null;
+            }
+            existingComment.Title=commentModel.Title;
+            existingComment.Content=commentModel.Content;
+            await _context.SaveChangesAsync();
+            return existingComment;
+
+        }
+
+        public Task<Comment?> UpdateAsync(int id, UpdateCommentRequestDto commentModel)
         {
             throw new NotImplementedException();
         }
